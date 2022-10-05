@@ -1,15 +1,18 @@
 const a = { "ON": "Ontario", "QC": "Quebec" };
 
+const animal1 = { name: "Fido", colour: "Brown"};
+
 const person1 = {
     firstName: 'Brendan',
     lastName: 'Wood',
     age: 20,
-    fullName: function() {return `$ this.firstName} ${this.lastName}`;}
+    // properties of the object ^^
+    x: (a, b) => a + b,
+    y: function() { return this.age + a + b },
+    // function of the object ^^
+    fullName: function() { return `${this.firstName} ${this.lastName}`; }
 };
 
 
-person2.lastName = "Smith";
 
-let x = person2.firstName;
-
-console.log
+console.log(person1.x(4,5));
