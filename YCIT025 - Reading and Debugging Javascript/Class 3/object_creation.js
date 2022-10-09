@@ -10,7 +10,7 @@ console.log(my_object[1]);
 
 
 
-// BEFORE XML NOT JSON, ^^ this is JSON
+// BEFORE XML NOW JSON, ^^ this is JSON
 
 
 const a = () => ({"QC":  "Quebec", "ON": "Ontario", "BC": "Bristich Columbia" })

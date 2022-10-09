@@ -16,3 +16,22 @@ const person1 = {
 
 
 console.log(person1.x(4,5));
+
+
+
+
+
+const car = {
+    brand: "Honda",
+    model: "CRV",
+    age: 4,
+    odometer: 23456,
+    x: (odometer, age) => odometer / age,
+    kmPerYear: function() {return this.odometer / this.age},
+  };
+
+  console.log(kmPerYear);
+
+  
+
+
