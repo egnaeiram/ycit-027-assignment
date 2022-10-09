@@ -1,0 +1,26 @@
+body {
+    background-color: #e2ffff;
+    color: #15495e;
+    margin-left:10%;
+    margin-right:10%;
+    font-family: arial, verdana, sans-serif;
+    font-display: #15495e;
+  }
+  
+  h1 {
+    background-color: #237b7b;
+    color: #ffffff;
+    line-height: 200%;
+    font-family: serif;
+    text-indent: 1em;
+    text-shadow: 3px 3px 5px #000000;
+  }
+
+  h2 {
+    background-color: #B0E6E6;
+    color: #237b7b;
+    line-height: 200%;
+    font-family: serif;
+    text-align: center;
+    
+  }
