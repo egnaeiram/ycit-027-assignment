@@ -57,8 +57,8 @@ Question 10
 
 Question 11
 
-    Suppose we have a functoin like:
-    functoin abc() {return "hello"; }
+    Suppose we have a function like:
+    function abc() {return "hello"; }
     What will be the output, when running the console.log(abc);?
         [Function: abc ]
 
