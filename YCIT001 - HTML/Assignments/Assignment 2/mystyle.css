@@ -1,65 +1,61 @@
-#header1 {
+header {
   padding-left: 2em;
   background-color: #80cbc4;
+  color: #d5ecec;
+  line-height: 400%;
   height: 150px;
+  font-family: serif;
+  text-indent: 1em;
+  text-shadow: #000000 3px 3px 5px;
+  background-image: url(./lilyheader.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 2em;
-  flex-wrap:wrap;
-  justify-content: center;
+  h1 {
+    color: #ffffff;
+    text-indent: 1em;
+    line-height: 200%;
+    text-shadow: 3px 3px 5px #000000;
+    display: flex
+  }
+
+  nav {
+    font-weight: bold;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* float: left; */
+    /* padding: 1em; */
+  }
+
+  #navMenu {
+  width: 70px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-style: outset;
+  border-width: 3px;
+  border-color: #cccccc;
+  padding: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
 }
+
 
 .nav-logo {
   margin-left: auto;
   margin-right: auto;
 }
 
-.home,
-.classes,
-.schedule,
-.contact {
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  list-style-type: none;
-  display: block;
-  border: 3px;
-  border-style: outset;
-  border-color: #cccccc;
-  color: #237b7b;
-  margin-bottom: 1em;
-  min-width: 400px;
-  width: 70px;
-
-}
-
-.home-hover,
-.classes-hover,
-.schedule-hover,
-.contact-hover {
-  color: #40407a ;
-  border-color: #333333 ;
-  border: 3px;
-  border-style: inset;
-  text-decoration: none;
-}
 
 #wrapper {
     background-color: #f5f5f5;
-    padding-left: 2em;
-    padding-right: 2em;
-    min-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 400px;
     max-width: 1280px;
-  }
-  #wrapper1 {
-    background-color: #f5f5f5;
-    padding-left: 2em;
-    padding-right: 2em;
-    min-width: 1000px;
   }
   
   #hero {
@@ -80,23 +76,13 @@
     font-family: arial, verdana, sans-serif;
     font-display: #15495e;
   }
-  
-  h1,
-  h2 {
-    font-family: serif;
-  }
-  
-  h1 {
-    color: #ffffff;
-    text-indent: 1em;
-    line-height: 200%;
-    text-shadow: 3px 3px 5px #000000;
-  }
+
   
   h2 {
     background-color: #b0e6e6;
     color: #237b7b;
     text-align: center;
+    font-family: serif;
   }
   
   .footer,
