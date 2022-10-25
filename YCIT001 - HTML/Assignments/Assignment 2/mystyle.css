@@ -41,6 +41,7 @@ header {
   padding: 1em;
   margin-bottom: 1em;
   cursor: pointer;
+  color: #15495e;
 }
 
 
@@ -84,7 +85,11 @@ header {
     text-align: center;
     font-family: serif;
   }
-  
+  #text {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .footer,
   #footer {
     background-color: #237b7b;
