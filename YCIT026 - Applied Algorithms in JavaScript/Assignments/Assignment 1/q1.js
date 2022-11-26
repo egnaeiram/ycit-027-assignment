@@ -21,8 +21,8 @@ function readLine() {
 let a = 7;
 let b = 3;
 
-function solveMeFirst (a,b) {
-  return a+b;
+function solveMeFirst (a, b) {
+  return a + b;
 }
 
 

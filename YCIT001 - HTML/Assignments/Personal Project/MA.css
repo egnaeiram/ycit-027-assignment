@@ -1,75 +1,123 @@
-#header {
-
+#alien {
+  flex: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: -22px;
+  align-items: right;
 }
-
-#header img {
-}
-
-#header h1 {
-    color:black;
-    font-size: xx-large;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    vertical-align: middle;
-    text-align: center;
+.text-header {
+  text-align: center;
+  padding-right: 40em;
+  padding-left: 1em;
+  flex: content;
 }
 #work {
-    color: black;
+  color: black;
+  font-family: serif;
+  font-size: medium;
 }
-
 #school {
-    color:black;
+  color: black;
+  font-family: serif;
+  font-size: medium;
 }
-
 #art {
-    color: black;
+  color: black;
+  font-family: serif;
+  font-size: medium;
+}
+.container {
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  padding: 2em;
+  background-color: rgb(234, 231, 244);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-group {
+  margin-bottom: 1.5em;
+  transition: all 0.3s;
+}
+.form-label {
+  font-size: 0.5em;
+  color: var(--font-color);
+  display: block;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateX(-50px);
+}
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+  border-color: #ccc;
+  border-style: none none solid none;
+  width: 100%;
+  font-size: 1.25em;
+  transition: all 0.6s;
+}
+.form-control::placeholder {
+  color: #aaa;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--font-hover-color);
+  outline: none;
+}
+.form-group:focus-within {
+  transform: scale(1.1, 1.1);
 }
 
-
-
-
-#footer {
-
+.form-control:invalid:focus {
+  border-color: red;
+}
+.form-control:valid:focus {
+  border-color: green;
 }
 
-
-
-
+.btn {
+  background: 0 0 #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: var(--font-color);
+  font-size: 1em;
+  padding: 10 50px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  border-color: var(--font-hover-color);
+  color: var(--font-hover-color);
+}
+textarea {
+  resize: none;
+}
+.focused > .form-label {
+  opacity: 1;
+  transform: translateX(0px);
+}
+#lekichains {
+  background-color: rgb(226, 222, 244);
+  color: white;
+}
+#soundcloud {
+  background-color: rgb(202, 194, 240);
+  color: white;
+}
+#instagram {
+  background-color: rgb(175, 160, 239);
+  color: white;
+}
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-
-/* Contact Page */
-
-.input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  .input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  .input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+#footer {
+  margin-bottom: -22px;
+}

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Test input</title>
+        <script language="JavaScript">
+            function ValidatePhone() {
+                var no = document.myform.phone.value;
+                alert("Phone number you entered is : " + no);
+                var pattern = /[0-9]{3}-[0-9]{3}-[0-9]{4}/;
+                if(pattern.test(no))
+                {
+                    alert("valid phone number");
+                    return true;
+                }
+                else
+                {
+                    alert("Please Enter valid phone number");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform" action="" method="get">
+            Enter your phone number: <br>
+            <input type="text" name="phone" onblur="return ValidatePhone()"><p>
+            <input type="button" name="submitno" value="validate number">
+        </form>
+    </body>
+</html>

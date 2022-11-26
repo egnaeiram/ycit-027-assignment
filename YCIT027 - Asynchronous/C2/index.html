@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<main>
+    <section>
+        <h1>Section 1</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisquam, quae.
+        </p>
+    </section>
+    <section>
+        <h1>Section 2</h1>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisquam, quae.
+    </section>
+</main>
+</body>
+<script>
+        // document.getElementById();
+        // document.getElementsByName();
+        // document.getElementsByClassName();
+        const res = document.getElementsByTagName("section");
+        const firstSelection = res[0];
+      
+        // console.log(firstSelection.classList);    
+firstSelection.classList.add("highlight", "shadow");
+        //    const firstChild = children[0];
+
+        firstSelection.par
+
+         //   console.log(children);
+
+        const elementWithShadow = document.querySelector(".shadow");
+        console.log(elementWithShadow);
+        // document.querySelector();;
+        // document.querySelectorAll();
+
+        elementWithShadow.forEach(element => {
+            console.assert(element.innerHTML);
+        });
+    </script>
+    <style>
+        .highlight {
+            background-color: bisque;
+        }
+
+        .shadow {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</html>

@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Itim', cursive;
+ }
+
+ .background {
+    background-color: #121818;
+    height: 100vh;
+    padding-top: 1px;
+ }
+
+ .title {
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+ }
+
+ .display {
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+ }
+ 
+ .hide {
+    display: none;
+ }
+
+ .container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+ }
+
+ .tile {
+    border: 1px solid aliceblue;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+ }
+ 
+.playerX {
+    color: blueviolet;
+}
+
+.playerO {
+    color: blue;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#reset {
+    background-color: #ff3860;
+    color: aliceblue;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+/* body {
+      height: 100vh;
+      margin: 0;
+
+      background-color: turquoise;
+    }
+
+    body.gameover {
+      background-color: red;
+    }
+
+    #background {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      place-items: center;
+
+      gap: 1px;
+
+      height: 100%;
+    }
+
+    #grid > div {
+      display: flex;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: ghostwhite;
+
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #grid > div > span {
+      font-family: fantasy;
+      pointer-events: none;
+      -webkit-user-select: none; /* Safari */ /*
+      -ms-user-select: none; /* IE 10 and IE 11 */ /*
+      user-select: none; /* Standard syntax */
+    

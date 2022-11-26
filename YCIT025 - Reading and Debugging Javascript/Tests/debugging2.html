@@ -1,0 +1,23 @@
+<html>
+<script>
+
+function displayEvenNumbers(){
+    let numbers = [1,2,3,4,5,6,7,8];
+   // alert ("function is called");
+    let evenNumbers = [];
+    // console.log('Numbers :' , numbers);
+    for (var i=0;i<numbers.length; i++){
+       // alert("Inside for loop");
+        if (numbers[i] % 2 == 0){
+            // alert("Inside if statement");
+            evenNumbers.push(numbers[i]);
+        
+            }
+    }
+    return evenNumbers;
+}
+console.log(displayEvenNumbers());
+
+// should return [2,4,6,8]
+</script>
+</html>
