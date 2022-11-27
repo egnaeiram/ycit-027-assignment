@@ -1,0 +1,31 @@
+<!-- Promise chaining -->
+
+<html>
+    <head>
+        <title>My App</title>
+    </head>
+    <body>
+        <div>Hello World </div>
+        <button onclick="getShoppingList()">Get Shopping List</button>
+        <script>
+            //HOMEWORK TO CHANGE TO ASYNC/AWAIT
+            function getShoppingList() {
+                console.log("hello?");
+                fetch('/shopping-list').then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data);
+                    const items = data
+                        .map((shoppingItem) => {
+                            return `<p>${shoppingItem}</p>`
+                        })
+                        .join("");
+
+                    document.body.querySelector('div').innerHTML = items;
+                    console.log(items);
+                });
+            }
+        </script>
+    </body>
+</html>
