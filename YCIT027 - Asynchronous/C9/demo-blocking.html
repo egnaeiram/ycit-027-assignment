@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Demonstration of the Engine being blocked</title>
+        <script src="compute-primes.js"></script>
+    </head>
+    <body>
+        <!-- make the square into a circle -->
+        <span
+            style="
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                position: absolute;
+                border-radius: 50px;
+            "
+        ></span>
+        <button
+            style="position: absolute; left: 50%; transform: translateX(-50%)"
+            onclick="startComputingPrimes()"
+        >
+            Start Computing Primes
+        </button>
+    </body>
+    <script>
+        const shape = document.querySelector("span");
+
+        shape.addEventListener("mousedown", (event) => {
+            const { clientX, clientY } = event;
+
+            const { left, top } = shape.getBoundingClientRect();
+
+            const offsetX = clientX - left;
+            const offsetY = clientY - top;
+
+            const onMouseMove = (event) => {
+                const { clientX, clientY } = event;
+
+                shape.style.left = `${clientX - offsetX}px`;
+                shape.style.top = `${clientY - offsetY}px`;
+
+                // Change background color like a rainbow based on the position of the shape
+
+                const hsl =
+                    (clientX / window.innerWidth) * 360 +
+                    (clientY / window.innerHeight) * 360;
+                shape.style.backgroundColor = `hsl(${hsl}, 100%, 50%)`;
+            };
+
+            const onMouseUp = () => {
+                document.removeEventListener("mousemove", onMouseMove);
+                document.removeEventListener("mouseup", onMouseUp);
+            };
+
+            document.addEventListener("mousemove", onMouseMove);
+            document.addEventListener("mouseup", onMouseUp);
+        });
+    </script>
+</html>
