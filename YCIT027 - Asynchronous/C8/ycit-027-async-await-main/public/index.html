@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>My App</title>
+  </head>
+  <body>
+    <div>Hello World</div>
+    <button onclick="getShoppingList()">Get Shopping List</button>
+    <script>
+      function getShoppingList() {
+        fetch("/shopping-list")
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            console.log(data);
+            const items = data
+              .map((shoppingItem) => {
+                return `<p>${shoppingItem.name}</p>`;
+              })
+              .join("");
+
+            document.body.querySelector("div").innerHTML = items;
+            console.log(items);
+          });
+      }
+    </script>
+  </body>
+</html>
