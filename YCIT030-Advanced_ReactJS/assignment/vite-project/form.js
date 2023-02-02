@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './style.css'
 
 export function App() {
     const [users, setUsers] = useState([])
@@ -18,6 +19,7 @@ export function App() {
         </div>
     )    
 }
+
 
 function Form(props) {
     const onSubmit = props.onSubmit
@@ -46,6 +48,9 @@ function Form(props) {
             <button type="submit" onClick={() => onSubmit({ name, email })}>
                 Submit
             </button>
+            <button type="delete" onClick={() => onDelete({ name, email })}>
+                Delete
+            </button>
         </form>
     )
 }
@@ -63,3 +68,5 @@ function List(props) {
         </ul>
     )
 }
+
+export default App

@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "node": "^18.13.0",
+    "nodemon": "^2.0.20"
   }
 }
